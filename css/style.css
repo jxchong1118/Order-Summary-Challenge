@@ -1,32 +1,112 @@
-body{
+body {
   font-size: 1rem;
   font-family: 'Red Hat Display', sans-serif;
-  background-image:url(../images/pattern-background-desktop.svg);
+  background-image: url(../images/pattern-background-desktop.svg);
+  color: hsl(224, 23%, 55%);
+}
+
+/* =========
+Typography
+============*/
+h5, h6 {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
 }
 
 
-
-
-
-
+.cancel-order {
+  font-weight: 700;
+}
 
 /* =========
 Layout
 ============*/
-.container {
-  width: 90%;
-  border: 1px solid magenta;
-  margin: 0 auto;
+
+.card-body-container{
+width: 85%;
+margin: 0 auto;
+  /* border: 1px solid magenta; */
 }
 
 
-
-
-
-
-
 /* Card */
-.card{
+.btn {
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 1px 17px 13px -2px rgba(56, 41, 224, 0.15);
+  color: #fff;
+  border-radius: 0.5em;
+}
+
+#card {
+  width: 80%;
+  max-width: 400px;
   text-align: center;
   margin: 7em auto;
+  border-radius: 1em;
+}
+
+#card .card-img-top {
+  border-radius: 1em 1em 0em 0em;
+  max-width: 100%;
+  display: block;
+}
+
+.annual-plan-container {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1em;
+  display: flex;
+  padding-bottom: 0;
+}
+
+.annual-plan-box {
+  flex-grow: 1;
+}
+
+.annual-plan-box-1 {
+  flex-grow: 1;
+}
+
+.annual-plan-box-2 {
+  flex-grow: 3;
+}
+
+.annual-plan-box-3 {
+  flex-grow: 4;
+  padding-left: 1em;
+}
+
+.annual-plan-container img {
+  display: block;
+}
+
+@media (max-width:360px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .annual-plan-container {
+    display: flex;
+    font-size: 0.75rem;
+  }
+
+  .annual-plan-box {
+    flex-grow: 1;
+  }
+
+  .annual-plan-box-1 {
+    flex-grow: 1;
+  }
+
+  .annual-plan-box-2 {
+    flex-grow: 3;
+  }
+
+  .annual-plan-box-3 {
+    flex-grow: 4;
+    padding-left: 1em;
+  }
+  .card-body-container {
+    width: 92%;
+    margin: 0 auto;
+  }
 }
